@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Add Footage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-bg">
+
+<div class="container">
+    <h1>Add CCTV Footage</h1>
+
+    <div class="form-card">
+        <input type="number" id="cameraId" placeholder="Camera ID">
+        <input type="text" id="date" placeholder="Date (DD-MM-YYYY)">
+        <input type="text" id="time" placeholder="Time (HH:MM)">
+        <input type="number" id="duration" placeholder="Duration (minutes)">
+        <input type="text" id="locationInput" placeholder="Location">
+
+        <button class="primary" onclick="addFootage()">Save Footage</button>
+        <button class="secondary" onclick="location.href='records.html'">
+            View Records
+        </button>
+
+  <button class="danger" onclick="location.href='index.html'">
+            ⬅ Back
+        </button>
+
+        <p id="status"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
